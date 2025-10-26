@@ -95,8 +95,7 @@ const newTask = () => {
                   value={chosenDate}
                   mode="date"
                   display={Platform.OS === 'ios' ? 'spinner' : 'default'}
-                  onChange={handleDateChange}
-                  textColor='gray'/>)}
+                  onChange={handleDateChange} />)}
         </View>
           <Text className="text-lg text-left font-bold mt-5 mb-3 ml-2">The location:</Text>
           <TextInput

@@ -79,14 +79,14 @@ const newTask = () => {
       value={chosenDate} 
       onChangeText={setChosenDate}
       placeholder='Date'></TextInput> */}
-        <View className='flex-column w-full flex justify-left bg-myWhite'>
+        <View className='h-auto flex-column w-full flex justify-left bg-myWhite'>
                 <View className='h-auto flex-row w-full flex justify-left bg-myWhite'>
-                  <View className='flex-row w-5/12 mt-5 mr-4 ml-2 h-15  mb-4 rounded-[4vw] px-0 py-4 items-center'>
-            <Text className="text-lg text-left font-bold mt-5 mb-3">The date:</Text>
+                  <View className='flex-row w-5/12 mt-5 mx-4 h-15  mb-4 rounded-[4vw] p-4 items-center'>
+            <Text className="text-lg text-left font-bold mt-5 mb-3 ml-2">The date:</Text>
           </View>
           <TouchableHighlight
             onPress={handleTogglePicker}
-            className='flex-row w-4/12 mx-4 mt-5 h-15 bg-myPink mb-4 rounded-[4vw] p items-center ml-2'>
+            className='flex-row w-4/12 mx-4 mt-5 h-15 bg-myPink mb-4 rounded-[4vw] p-4 items-center'>
                   <Text className='ml-3'>{chosenDate ? new Date(chosenDate).toLocaleDateString() : 'no date'}</Text>
                   
           </TouchableHighlight>
@@ -95,8 +95,7 @@ const newTask = () => {
                   value={chosenDate}
                   mode="date"
                   display={Platform.OS === 'ios' ? 'spinner' : 'default'}
-                  onChange={handleDateChange}
-                  textColor='gray'/>)}
+                  onChange={handleDateChange} />)}
         </View>
           <Text className="text-lg text-left font-bold mt-5 mb-3 ml-2">The location:</Text>
           <TextInput

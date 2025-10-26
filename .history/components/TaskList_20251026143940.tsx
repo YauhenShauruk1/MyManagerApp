@@ -55,7 +55,7 @@ const TaskList = () => {
       <View className='flex-row w-11/12 mx-4 h-15 bg-myWhite mb-4 rounded-[4vw] p-4 items-center'>
       <View className='w-1/2 justify-center '><Text>{title}</Text></View>
       <View className='w-1/2 flex-col items-end justify-center '>
-        <View className='text-gray-800'>
+        <View className=''>
           <Text>{date ? new Date(date).toLocaleDateString() : 'no date'}</Text>
         </View>
         <View>
